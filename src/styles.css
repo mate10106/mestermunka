@@ -3,126 +3,15 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: white;
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .container {
     margin: 1rem;
     text-align: center;
-}
-
-.nav {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 2rem;
-    padding: 0 1rem;
-}
-
-.site-title {
-    font-size: 3rem;
-}
-
-.nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav a {
-    color: inherit;
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: .25rem;
-}
-
-.nav li.active {
-    border-bottom: 2px white solid;
-}
-
-.nav li:hover {
-    border-bottom: 3px white solid;
-}
-
-.search {
-    padding: 0;
-    margin: 15px;
-    width: 30rem;
-    font-size: 20px;
-    border-radius: 20px;
-}
-
-.all-form {
-    text-align: center;
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
-
-.auth-form-container,
-.login-form,
-.register-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    text-align: left;
-    padding: 0.25rem 0;
-    color: aqua;
-}
-
-input {
-    margin: 0.25rem 0;
-    padding: 1rem;
-    border: none;
-    border-radius: 10px;
-    color: black;
-}
-
-button {
-    border: none;
-    color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.link-button {
-    background: none;
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.link-button:hover {
-    color: salmon;
-}
-
-.gradient__bg {
-    /* ff 3.6+ */
-    background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-    /* safari 5.1+,chrome 10+ */
-    background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-    /* opera 11.10+ */
-    background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-    /* ie 10+ */
-    background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-    /* global 92%+ browsers support */
-    background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
 }

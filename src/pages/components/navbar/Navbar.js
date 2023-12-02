@@ -1,12 +1,11 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import './Navbar.css'
 
 export default function Navbar() {
     return <nav className="nav">
         <Link to="/Home" className="site-title">PC Webáruház</Link>
-        <input type="text" className="search"></input>
-        
         <ul>
-            <CustomLink to="/pages/products/products">Products</CustomLink>
+            <CustomLink to="/products">Products</CustomLink>
             <CustomLink to="/about">About</CustomLink>
             <CustomLink to="/login">Login</CustomLink>
         </ul>

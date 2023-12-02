@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar'
-import Login from './pages/Login'
-import Products from './pages/products/Products'
-import Register from './pages/Register'
+import { Navbar, Products, Login, Register } from './pages/components'
 import Home from './pages/Home'
 import About from './pages/About'
 
@@ -22,7 +19,7 @@ function App() {
             <Route path='/products' element={<Products />}></Route>
             <Route path='/about' element={<About />}></Route>
             <Route path='/login' element={
-              currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+              currentForm === "register" ? <Register onFormSwitch={toggleForm} /> : <Login onFormSwitch={toggleForm} />
             }></Route>
           </Routes>
       </div>
