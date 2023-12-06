@@ -15,10 +15,10 @@ export default function Login(props) {
             <form className="login-form" onSubmit={ handleSubmit }>
                 <label htmlFor="email">Email</label>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com"></input>
-                <label htmlFor="password">Password</label>
-                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="***********"></input>
+                <label htmlFor="password">Jelszó</label>
+                <input value={pass} onChange={(e) => setPass(e.target.value)} type="Jelszó" placeholder="***********"></input>
                 <button type="submit" className="login-button">
-                    <span>Log in</span>
+                    <span>Bejelentkezés</span>
                 </button>
             </form>
             <button className="link-button" onClick={() =>  props.onFormSwitch('register')} >Don't have an account? Register here.</button>

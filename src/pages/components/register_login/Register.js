@@ -14,14 +14,14 @@ export default function Register(props) {
         <div className="all-form">
             <div className="auth-form-container">
             <form className="register-form" onSubmit={ handleSubmit }>
-                <label htmlFor="name">Full name</label>
-                <input value={name} name="name" id="name" placeholder="Full Name" ></input>
+                <label htmlFor="name">Felhasználónév</label>
+                <input value={name} name="name" id="name" placeholder="Felhasználónév" ></input>
                 <label htmlFor="email">Email</label>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com"></input>
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">Jelszó</label>
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="***********"></input>
                 <button type="submit" className="register-button">
-                    <span>Registration</span>
+                    <span>Regisztráció</span>
                 </button>
             </form>
             <button className="link-button" onClick={() =>  props.onFormSwitch('login')} >Already have an account? Login here.</button>
