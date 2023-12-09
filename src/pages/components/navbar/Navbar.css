@@ -1,7 +1,7 @@
 .nav {
     color: black;
     display: flex;
-    background-color: cadetblue;
+    background-color: rgb(98, 158, 160);
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
